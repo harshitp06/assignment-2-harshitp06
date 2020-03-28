@@ -8,21 +8,21 @@ import java.util.Queue;
 public class MyBinarySearchTree {
     static Queue<TreeNode> q;
 
-    public TreeNode insert(TreeNode root, int x) {
+    public TreeNode insert(TreeNode roots, int x) {
 
-        if (root == null)
+        if (roots == null)
 
             return new TreeNode(x);
 
-        else if (x > root.getData())
+        else if (x > roots.getData())
 
-            root.setRight(insert(root.getRight(), x));
+            roots.setRight(insert(roots.getRight(), x));
 
         else
 
-            root.setLeft(insert(root.getLeft(), x));
+            roots.setLeft(insert(roots.getLeft(), x));
 
-        return root;
+        return roots;
 
     }
 
