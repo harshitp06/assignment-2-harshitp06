@@ -26,15 +26,15 @@ public class MyBinarySearchTree {
 
     }
 
-    public void inorderRec(TreeNode root) {
+    public void inorderRecd(TreeNode root) {
 
         if (root.getLeft() != null) {
 
-            inorderRec(root.getLeft());
+            inorderRecd(root.getLeft());
 
             System.out.println(root.getData());
 
-            inorderRec(root.getRight());
+            inorderRecd(root.getRight());
 
         }
 
